@@ -1,0 +1,14 @@
+@use './abstracts/variables'; 
+
+@use './themes/theme-adalid'; 
+@use './vendors/reset'; 
+@use './base/fonts';
+@use './components/buttons';
+@use './layout/header';
+@use './layout/footer';
+@use './pages/main';
+@use './pages/equipo-medico';
+@use './pages/contacto';
+
+
+

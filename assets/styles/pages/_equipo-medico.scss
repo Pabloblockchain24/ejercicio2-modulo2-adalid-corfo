@@ -1,0 +1,72 @@
+@use "../themes/theme-adalid" as colors;
+@use "../abstracts/variables" as breakpoints;
+
+.equipo-medico__container img {
+  width: 150px;
+}
+
+.equipo-medico__container {
+  section {
+    padding-inline: 10rem;
+    @media (max-width: breakpoints.$breakpoint-xl) {
+      padding-inline: 5rem;
+    }
+    @media (max-width: breakpoints.$breakpoint-lg) {
+      padding-inline: 3rem;
+    }
+    @media (max-width: breakpoints.$breakpoint-sm) {
+      padding-inline: 2rem;
+    }
+  }
+  article {
+    @media (max-width: breakpoints.$breakpoint-sm) {
+      padding-inline: 2rem;
+    }
+  }
+}
+
+.equipo-medico__section-Bienvenida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.equipo-medico__section-Equipo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  article {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem 5rem;
+    background-color: colors.$primary-color;
+    box-shadow: 0 4px 8px colors.$shadow-color;
+
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 0.5rem;
+      h3,p:first-of-type {
+        font-weight: bold;
+      }
+      @media (max-width: breakpoints.$breakpoint-sm) {
+        align-items: center;
+      }
+    }
+    @media (max-width: breakpoints.$breakpoint-sm) {
+      flex-direction: column;
+      padding: 2rem;
+      align-items: center;
+    }
+ 
+
+  }
+}

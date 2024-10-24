@@ -1,0 +1,34 @@
+@use "../themes/theme-adalid" as colors;
+@use "../abstracts/variables" as breakpoints;
+
+.header__button {
+  background-color: colors.$tertiary-color;
+  color: colors.$white;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px colors.$shadow-color;
+  &:hover {
+    background-color: colors.$tertiary-color-hover;
+    box-shadow: 0 6px 12px colors.$shadow-color;
+  }
+  @media (max-width: breakpoints.$breakpoint-sm) {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+}
+.contacto__button {
+  background-color: colors.$primary-color-button;
+  color: colors.$white;
+  font-weight: bold;
+  padding: 1rem 4rem;
+  box-shadow: 0 4px 8px colors.$shadow-color;
+  cursor: pointer;
+  &:hover {
+    background-color: colors.$primary-color;
+    box-shadow: 0 6px 12px colors.$shadow-color;
+  }
+}
